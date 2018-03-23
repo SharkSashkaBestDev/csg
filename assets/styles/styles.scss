@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "./theme";
+
+$light-color: lightgray;
+$medium-color: gray;
+$teal-color: teal;
+$empty-distance: 0em 0em;
+$sm: 0.5em;
+//$background-color: #C9DEE2;
+$foreground-color: #789095;
+$background-color: rgb(246, 244, 241);
+
+body {
+  padding: $empty-distance;
+  background: $background-color;
+  //color: $foreground-color;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 1em;
+}
+
+html, body, material-app, mat-sidenav-container, .main-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: $background-color;
+}
+
+mat-toolbar {
+  z-index: 10;
+  position: fixed;
+  -webkit-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.15);
+  box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.15);
+}
+
+.mat-card-header-text {
+  width: 100%;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(131, 108, 99)!important;
+
+  text-align: center;
+  max-height: 4em;
+  background-color: rgb(206, 204, 200);
+
+  -webkit-box-shadow: 0px -4px 10px -1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px -4px 10px -1px rgba(0,0,0,0.15);
+  box-shadow: 0px -4px 10px -1px rgba(0,0,0,0.15);
+
+  .copyright {
+    position: absolute;
+    right: 2em;
+    //bottom: 1.6em;
+    font-size: xx-small;
+  }
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
