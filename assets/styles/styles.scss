@@ -81,3 +81,10 @@ mat-toolbar {
 .clickable {
   cursor: pointer;
 }
+
+.account-snack, .it-snack, .out-snack {
+  //height: auto!important;
+  border-radius: 0.5em!important;
+  //width: 100%!important;
+  max-width: 100%!important;
+}
